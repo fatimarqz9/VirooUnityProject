@@ -1,0 +1,20 @@
+{
+  "version": "Viroo 2.1",
+  "arenaOffset": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "boundaryItems": [
+    {
+      "name": "Exterior Boundary",
+      "points": [
+        { "x": -3.7, "y": 0, "z": -6 },
+        { "x":  3.7, "y": 0, "z": -6 },
+        { "x":  3.7, "y": 0, "z":  6 },
+        { "x": -3.7, "y": 0, "z":  6 },
+        { "x": -3.7, "y": 0, "z": -6 }
+      ]
+    }
+  ]
+}
