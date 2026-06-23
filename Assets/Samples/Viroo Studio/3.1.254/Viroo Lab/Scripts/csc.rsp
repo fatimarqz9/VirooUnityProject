@@ -1,0 +1,5 @@
+-nullable:enable
+-warnaserror
+#_https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs1701
+#_https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs1702
+-warnaserror-:CS1701,CS1702
