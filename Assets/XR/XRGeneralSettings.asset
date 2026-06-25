@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: -2470019853771368534}
-  m_InitManagerOnStart: 0
+  m_InitManagerOnStart: 1
 --- !u!114 &-131715514961424270
 MonoBehaviour:
   m_ObjectHideFlags: 0
