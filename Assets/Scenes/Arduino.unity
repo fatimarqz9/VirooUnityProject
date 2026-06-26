@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525863b4c1c3f81489750ca1c4c0193f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelInfo: {fileID: 0}
+  panelInfo: {fileID: 1183265192}
 --- !u!4 &131935985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4685976674770980, guid: 40977f1f421b682459aa11ac70bbfc2c,
@@ -7533,8 +7533,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802620544}
-  - component: {fileID: 802620545}
-  - component: {fileID: 802620546}
   m_Layer: 0
   m_Name: Arduino_Informacion
   m_TagString: Untagged
@@ -7558,41 +7556,6 @@ Transform:
   - {fileID: 125715250}
   m_Father: {fileID: 1048934600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &802620545
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802620543}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!114 &802620546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802620543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 525863b4c1c3f81489750ca1c4c0193f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelInfo: {fileID: 0}
 --- !u!1 &812622163
 GameObject:
   m_ObjectHideFlags: 0
