@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525863b4c1c3f81489750ca1c4c0193f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelInfo: {fileID: 0}
+  panelInfo: {fileID: 1183265192}
 --- !u!4 &131935985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4685976674770980, guid: 40977f1f421b682459aa11ac70bbfc2c,
@@ -10772,8 +10772,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cea999c3070074fbfdbee928475983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tituloText: {fileID: 0}
-  cuerpoText: {fileID: 0}
+  tituloText: {fileID: 1685702134}
+  cuerpoText: {fileID: 1979623925}
 --- !u!114 &1183265198
 MonoBehaviour:
   m_ObjectHideFlags: 0
