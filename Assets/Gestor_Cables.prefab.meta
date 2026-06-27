@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: b147e8effc5dd8248b929bc3c16e7fd7
-PrefabImporter:
+<<<<<<<< HEAD:Assets/Scenes/Arduino_BACKUP_534.unity.meta
 guid: ca8fae7ff207c774797d6044b223c1d9
 DefaultImporter:
+========
+guid: b147e8effc5dd8248b929bc3c16e7fd7
+PrefabImporter:
+>>>>>>>> f19fe22 (Agregando avance de Hola Mundo en Arduino y cambiando color porque no les gustó :():Assets/Gestor_Cables.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
