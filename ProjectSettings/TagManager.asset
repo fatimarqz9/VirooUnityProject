@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - Chaperone
+  - LED_Positivo
+  - LED_Negativo
+  - Pin_Arduino
+  - Pin_Resistencia
+  - Pin_13
+  - Pin_GND
   layers:
   - Default
   - TransparentFX
@@ -12,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - PinConexion
   - Controllers
   - Physics_Floor
   - Player

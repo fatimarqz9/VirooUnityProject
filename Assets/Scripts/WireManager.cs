@@ -1,53 +1,69 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class WireManager : MonoBehaviour
 {
-    [Header("Configuración del Cable")]
     public Material materialCable;
-    public float grosorCable = 0.005f; // 5 milímetros de grosor
-
-    // Guardame el primer pin que el usuario toque
+    public float grosorCable = 0.005f;
+    public CircuitManager circuitManager;
     private Transform pinDeInicio = null;
+    private GameObject cableEnCurso = null;
 
-    // Esta función la llamará cada pin cuando el usuario lo toque
-    public void TocarPin(Transform pinSeleccionado)
+    public void TocarPinSimple(SelectEnterEventArgs args)
+    {
+        Transform pinSeleccionado = args.interactableObject.transform;
+        Transform manoJugador = args.interactorObject.transform;
+        EjecutarLogicaConexion(pinSeleccionado, manoJugador);
+    }
+
+    private void EjecutarLogicaConexion(Transform pinSeleccionado, Transform manoJugador)
     {
         if (pinDeInicio == null)
         {
-            // Es el primer toque: Guardamos este pin como inicio
+            // primero buscamos si el pin que toca tiene un cable viejo
+            GameObject cableExistente = BuscarCableEnPin(pinSeleccionado);
+            if (cableExistente != null)
+            {
+                CableDinamico datosCable = cableExistente.GetComponent<CableDinamico>();
+                if (circuitManager != null)
+                    circuitManager.ForzarDesconexion(datosCable.pinA.tag, datosCable.pinB.tag);
+                Destroy(cableExistente);
+            }
+
+            // despues empezamos el nuevo cable
             pinDeInicio = pinSeleccionado;
-            Debug.Log("Primer pin seleccionado: " + pinSeleccionado.name);
+            cableEnCurso = new GameObject("CableEnCurso");
+
+            LineRenderer lr = cableEnCurso.AddComponent<LineRenderer>();
+            CableDinamico dinamico = cableEnCurso.AddComponent<CableDinamico>();
+
+            dinamico.pinA = pinDeInicio;
+            dinamico.Inicializar(materialCable, grosorCable);
+            dinamico.ConfigurarCable(pinDeInicio, manoJugador);
         }
         else
         {
-            // Es el segundo toque: Verificamos que no sea el mismo pin
             if (pinDeInicio != pinSeleccionado)
             {
-                CrearCableVisual(pinDeInicio, pinSeleccionado);
-                Debug.Log("Conectando " + pinDeInicio.name + " con " + pinSeleccionado.name);
+                cableEnCurso.GetComponent<CableDinamico>().ConfigurarCable(pinDeInicio, pinSeleccionado);
+                cableEnCurso.GetComponent<CableDinamico>().pinB = pinSeleccionado;
+                if (circuitManager != null)
+                    circuitManager.RegistrarConexion(pinDeInicio.tag, pinSeleccionado.tag);
             }
-
-            // Limpiamos la memoria para que pueda hacer otro cable nuevo
+            else { Destroy(cableEnCurso); }
             pinDeInicio = null;
+            cableEnCurso = null;
         }
     }
 
-    private void CrearCableVisual(Transform inicio, Transform fin)
+    private GameObject BuscarCableEnPin(Transform pin)
     {
-        // Creamos un objeto vacío nuevo para el cable
-        GameObject nuevoCable = new GameObject("Cable_" + inicio.name + "_A_" + fin.name);
-
-        // Le añadimos la herramienta de dibujo de Unity
-        LineRenderer lr = nuevoCable.AddComponent<LineRenderer>();
-
-        // Lo configuramos para que parezca un cable real
-        lr.material = materialCable;
-        lr.startWidth = grosorCable;
-        lr.endWidth = grosorCable;
-        lr.positionCount = 2; // Solo tiene 2 puntos (inicio y fin)
-
-        // Trazamos la línea
-        lr.SetPosition(0, inicio.position);
-        lr.SetPosition(1, fin.position);
+        CableDinamico[] cablesExistentes = FindObjectsByType<CableDinamico>(FindObjectsSortMode.None);
+        foreach (var cable in cablesExistentes)
+        {
+            if (cable.pinA == pin || cable.pinB == pin)
+                return cable.gameObject;
+        }
+        return null;
     }
 }
