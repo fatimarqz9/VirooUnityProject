@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9fcd1e5ad3403124992a3b1f2e013424
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ledRenderer: {instanceID: 0}
+  - materialEncendido: {fileID: 2100000, guid: 3d3f14dcd9d197d4cb13e6a1d32a8790, type: 2}
+  - materialApagado: {fileID: 2100000, guid: b081bace3328edc4ab6b9e29ee152ae9, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

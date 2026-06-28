@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: e636e648cad2fd0459e4297a8dae0233
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - materialCable: {fileID: 2100000, guid: b36816554e1e8fb4b93f425e3cd37ff2, type: 2}
+  - circuitManager: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
