@@ -22258,6 +22258,7 @@ GameObject:
   - component: {fileID: 1241565561}
   - component: {fileID: 1241565560}
   - component: {fileID: 919132148328845404}
+  - component: {fileID: 919132148328845405}
   m_Layer: 0
   m_Name: LED (1)
   m_TagString: Untagged
@@ -22280,6 +22281,19 @@ MonoBehaviour:
   ledRenderer: {fileID: 7842296092924283550}
   materialEncendido: {fileID: 2100000, guid: 3d3f14dcd9d197d4cb13e6a1d32a8790, type: 2}
   materialApagado: {fileID: 2100000, guid: b081bace3328edc4ab6b9e29ee152ae9, type: 2}
+--- !u!114 &919132148328845405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148328845403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed75c115754d264f96ff27f0d1ab46d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  led: {fileID: 919132148328845404}
 --- !u!4 &1423203246309325265
 Transform:
   m_ObjectHideFlags: 0

@@ -76,3 +76,8 @@ crashlytics-build.properties
 
 # Sonarqube working area
 .sonarqube/
+
+# Ignorar configuraciones locales generadas por Viroo y Unity
+ProjectSettings/Packages/com.viroo/Settings.*
+ProjectSettings/Packages/com.virtualware.localization/Settings.*
+ProjectSettings/Packages/com.virtualware.resourcegenerator/Settings.*
