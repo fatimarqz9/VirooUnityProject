@@ -1,0 +1,566 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 29814,
+      "max": [
+        0.0030462141148746014,
+        0.0011949529871344566,
+        0.001200019964016974
+      ],
+      "min": [
+        -0.002978920005261898,
+        -0.0011951320338994265,
+        -0.0012003770098090172
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 357768,
+      "componentType": 5126,
+      "count": 29814,
+      "max": [
+        0.9440094232559204,
+        0.9999226927757263,
+        0.9998164772987366
+      ],
+      "min": [
+        -0.9494515061378479,
+        -0.9996190071105957,
+        -0.9998294115066528
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 29814,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 715536,
+      "componentType": 5126,
+      "count": 31152,
+      "max": [
+        0.0017973179928958416,
+        0.0011956690577790141,
+        0.0011920330580323935
+      ],
+      "min": [
+        0.0014911290490999818,
+        -0.0011957279639318585,
+        -0.001201033010147512
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1089360,
+      "componentType": 5126,
+      "count": 31152,
+      "max": [
+        0.8623824119567871,
+        0.9880300164222717,
+        0.9882165789604187
+      ],
+      "min": [
+        -0.47999992966651917,
+        -0.9880319237709045,
+        -0.9894552230834961
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 119256,
+      "componentType": 5125,
+      "count": 31152,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1463184,
+      "componentType": 5126,
+      "count": 29854,
+      "max": [
+        0.0007966900011524558,
+        0.0009558569872751832,
+        0.0009540200117044151
+      ],
+      "min": [
+        0.0004917570040561259,
+        -0.0009554550051689148,
+        -0.000957300013396889
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1821432,
+      "componentType": 5126,
+      "count": 29854,
+      "max": [
+        -0.06796228140592575,
+        0.9950234293937683,
+        0.9960365295410156
+      ],
+      "min": [
+        -0.19310593605041504,
+        -0.995785117149353,
+        -0.99514240026474
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 243864,
+      "componentType": 5125,
+      "count": 29856,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2179680,
+      "componentType": 5126,
+      "count": 5544,
+      "max": [
+        -0.00020346099336165935,
+        0.0011965630110353231,
+        0.0012012120569124818
+      ],
+      "min": [
+        -0.0017299649771302938,
+        -0.0011963839642703533,
+        -0.0011917940573766828
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2246208,
+      "componentType": 5126,
+      "count": 5544,
+      "max": [
+        0.7594907879829407,
+        0.9968968033790588,
+        0.9981337785720825
+      ],
+      "min": [
+        -0.6468781232833862,
+        -0.9968929290771484,
+        -0.9984425902366638
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 363288,
+      "componentType": 5125,
+      "count": 30498,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2312736,
+      "componentType": 5126,
+      "count": 5048,
+      "max": [
+        0.014999919570982456,
+        0.0002919189864769578,
+        0.0002957330143544823
+      ],
+      "min": [
+        -0.014890190213918686,
+        -0.0002923829888459295,
+        -0.0002971559879370034
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2373312,
+      "componentType": 5126,
+      "count": 5048,
+      "max": [
+        0.9999967813491821,
+        0.9998577237129211,
+        0.9966865181922913
+      ],
+      "min": [
+        -0.9999967813491821,
+        -0.99944669008255,
+        -0.999853789806366
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 485280,
+      "componentType": 5125,
+      "count": 29934,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Robótica Paraná (https://sketchfab.com/roboticaparana)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/resistor-220ohms-ce8257ec32af48329c9317c2e8ba704c",
+      "title": "Resistor 220Ohms"
+    },
+    "generator": "Sketchfab-16.73.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 605016,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2433888,
+      "byteOffset": 605016,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3038904,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "METAL",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.723043,
+          0.723043,
+          0.723043,
+          1.0
+        ],
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "VERMELHO",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8829219999999998,
+          0.0,
+          0.01861159999999994,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "MARRON",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.17885699999999993,
+          0.036601500000000016,
+          0.0186803,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "OURO.003",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.698828,
+          0.0,
+          1.0
+        ],
+        "roughnessFactor": 0.12647657592861233
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "CERAMICA",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.395126,
+          0.17699,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "CERAMICA-material",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "OURO_003-material",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "MARRON-material",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "VERMELHO-material",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "METAL-material",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12
+          },
+          "indices": 14,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "name": "Collada visual scene group"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        0.999999,
+        0.001318693,
+        0.0,
+        0.0,
+        5.76419e-11,
+        -4.37114e-08,
+        1.0,
+        0.0,
+        0.001318693,
+        -0.999999,
+        -4.37114e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Retopo_220.003"
+    },
+    {
+      "mesh": 0,
+      "name": "CERAMICA-material"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.999999,
+        0.001318693,
+        0.0,
+        0.0,
+        5.76419e-11,
+        -4.37114e-08,
+        1.0,
+        0.0,
+        0.001318693,
+        -0.999999,
+        -4.37114e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Retopo_220.008"
+    },
+    {
+      "mesh": 1,
+      "name": "OURO_003-material"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        0.999999,
+        0.001318693,
+        0.0,
+        0.0,
+        5.76419e-11,
+        -4.37114e-08,
+        1.0,
+        0.0,
+        0.001318693,
+        -0.999999,
+        -4.37114e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Retopo_220.001"
+    },
+    {
+      "mesh": 2,
+      "name": "MARRON-material"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        0.999999,
+        0.001318693,
+        0.0,
+        0.0,
+        5.76419e-11,
+        -4.37114e-08,
+        1.0,
+        0.0,
+        0.001318693,
+        -0.999999,
+        -4.37114e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Retopo_220.006"
+    },
+    {
+      "mesh": 3,
+      "name": "VERMELHO-material"
+    },
+    {
+      "children": [
+        11
+      ],
+      "matrix": [
+        0.999999,
+        0.001318693,
+        0.0,
+        0.0,
+        5.76419e-11,
+        -4.37114e-08,
+        1.0,
+        0.0,
+        0.001318693,
+        -0.999999,
+        -4.37114e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Retopo_220.004"
+    },
+    {
+      "mesh": 4,
+      "name": "METAL-material"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

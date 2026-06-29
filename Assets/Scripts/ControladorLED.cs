@@ -5,21 +5,32 @@ public class ControladorLED : MonoBehaviour
     public Renderer ledRenderer;
     public Material materialEncendido;
     public Material materialApagado;
+    public Material materialQuemado; 
 
+    private bool estaQuemado = false; 
     void Awake()
     {
-        // Esto busca automáticamente el renderer en los hijos si no está asignado
+       
         if (ledRenderer == null)
             ledRenderer = GetComponentInChildren<Renderer>();
     }
 
     public void CambiarEstado(bool encendido)
     {
-        if (ledRenderer == null) return;
+      
+        if (ledRenderer == null || estaQuemado) return;
 
-        // Asignamos el material directamente
+        
         ledRenderer.sharedMaterial = encendido ? materialEncendido : materialApagado;
+        Debug.Log("Estado del LED cambiado a: " + (encendido ? "Encendido" : "Apagado"));
+    }
 
-        Debug.Log("Material aplicado a: " + ledRenderer.name);
+    public void QuemarLED()
+    {
+        if (estaQuemado || ledRenderer == null) return; 
+
+        estaQuemado = true;
+        ledRenderer.sharedMaterial = materialQuemado;
+        Debug.Log("¡PUM! Cortocircuito. El LED recibió corriente directa y se quemó.");
     }
 }

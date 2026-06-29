@@ -4,8 +4,6 @@ using System.Collections.Generic;
 public class CircuitManager : MonoBehaviour
 {
     public ControladorLED led;
-
-    // Lista para rastrear qué está conectado con qué
     private Dictionary<string, string> conexiones = new Dictionary<string, string>();
 
     public void RegistrarConexion(string puntoA, string puntoB)
@@ -30,23 +28,59 @@ public class CircuitManager : MonoBehaviour
 
     private void ValidarCircuito()
     {
-        foreach (var entry in conexiones)
-        {
-            Debug.Log("Clave: " + entry.Key + " | Valor: " + entry.Value);
-        }
+        bool tierraConectada = conexiones.ContainsKey("LED_Negativo") && conexiones["LED_Negativo"] == "Pin_GND";
 
-        // Verifica si el cable del Ánodo va a 5V/13 y el Cátodo a GND
-        bool positivoConectado = conexiones.ContainsKey("LED_Positivo") && conexiones["LED_Positivo"] == "Pin_13";
-        bool negativoConectado = conexiones.ContainsKey("LED_Negativo") && conexiones["LED_Negativo"] == "Pin_GND";
-
-        if (positivoConectado && negativoConectado)
-        {
-            led.CambiarEstado(true);
-        }
-        else
+        if (!tierraConectada)
         {
             led.CambiarEstado(false);
+            return;
         }
+
+        if (conexiones.ContainsKey("LED_Positivo"))
+        {
+            string componenteEnPositivo = conexiones["LED_Positivo"];
+
+            if (componenteEnPositivo == "Pin_13" || componenteEnPositivo == "Pin_5V")
+            {
+                led.QuemarLED();
+                return;
+            }
+
+            if (componenteEnPositivo == "R220_A" || componenteEnPositivo == "R220_B")
+            {
+                string pataContraria = (componenteEnPositivo == "R220_A") ? "R220_B" : "R220_A";
+
+                if (conexiones.ContainsKey(pataContraria) &&
+                   (conexiones[pataContraria] == "Pin_13" || conexiones[pataContraria] == "Pin_5V"))
+                {
+                    led.CambiarEstado(true);
+                    return;
+                }
+            }
+
+            if (componenteEnPositivo == "R1K_A" || componenteEnPositivo == "R1K_B" ||
+                componenteEnPositivo == "R4.7_A" || componenteEnPositivo == "R4.7_B" ||
+                componenteEnPositivo == "R10K_A" || componenteEnPositivo == "R10K_B")
+            {
+                string pataContraria = "";
+
+                if (componenteEnPositivo == "R1K_A") pataContraria = "R1K_B";
+                else if (componenteEnPositivo == "R1K_B") pataContraria = "R1K_A";
+                else if (componenteEnPositivo == "R4.7_A") pataContraria = "R4.7_B";
+                else if (componenteEnPositivo == "R4.7_B") pataContraria = "R4.7_A";
+                else if (componenteEnPositivo == "R10K_A") pataContraria = "R10K_B";
+                else if (componenteEnPositivo == "R10K_B") pataContraria = "R10K_A";
+
+                if (conexiones.ContainsKey(pataContraria) &&
+                   (conexiones[pataContraria] == "Pin_13" || conexiones[pataContraria] == "Pin_5V"))
+                {
+                    led.CambiarEstado(false);
+                    return;
+                }
+            }
+        }
+
+        led.CambiarEstado(false);
     }
 
     public void ForzarDesconexion(string pinA, string pinB)

@@ -11,6 +11,14 @@ TagManager:
   - Pin_Resistencia
   - Pin_13
   - Pin_GND
+  - R220_A
+  - R220_B
+  - R1K_A
+  - R1K_B
+  - R4.7_A
+  - R4.7_B
+  - R10K_A
+  - R10K_B
   layers:
   - Default
   - TransparentFX
